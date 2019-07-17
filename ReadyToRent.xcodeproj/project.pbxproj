@@ -12,6 +12,8 @@
 		FB27FEE122D2A5F000735058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEDF22D2A5F000735058 /* Main.storyboard */; };
 		FB27FEE322D2A5F100735058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEE222D2A5F100735058 /* Assets.xcassets */; };
 		FB27FEE622D2A5F100735058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */; };
+		FB27FEEF22D5518000735058 /* blue_home.png in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEEE22D5517F00735058 /* blue_home.png */; };
+		FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B34922DFBB530065B058 /* OwnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB27FEE222D2A5F100735058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB27FEE522D2A5F100735058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB27FEE722D2A5F100735058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB27FEEE22D5517F00735058 /* blue_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_home.png; sourceTree = "<group>"; };
+		FB36B34922DFBB530065B058 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		FB27FEDA22D2A5F000735058 /* ReadyToRent */ = {
 			isa = PBXGroup;
 			children = (
+				FB27FEED22D5515500735058 /* Assests */,
 				FB27FEDB22D2A5F000735058 /* AppDelegate.swift */,
 				FB27FEDD22D2A5F000735058 /* LoginViewController.swift */,
+				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
 				FB27FEE222D2A5F100735058 /* Assets.xcassets */,
 				FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */,
 				FB27FEE722D2A5F100735058 /* Info.plist */,
 			);
 			path = ReadyToRent;
+			sourceTree = "<group>";
+		};
+		FB27FEED22D5515500735058 /* Assests */ = {
+			isa = PBXGroup;
+			children = (
+				FB27FEEE22D5517F00735058 /* blue_home.png */,
+			);
+			path = Assests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB27FEE622D2A5F100735058 /* LaunchScreen.storyboard in Resources */,
+				FB27FEEF22D5518000735058 /* blue_home.png in Resources */,
 				FB27FEE322D2A5F100735058 /* Assets.xcassets in Resources */,
 				FB27FEE122D2A5F000735058 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
 				FB27FEDE22D2A5F000735058 /* LoginViewController.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
 			);
