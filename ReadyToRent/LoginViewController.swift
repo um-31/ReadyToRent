@@ -18,22 +18,19 @@ class LoginViewController: UIViewController {
         
     }
     @IBAction func btnLogin(_ sender: Any) {
-        if self.txtUserName.text == "admin@gmail.com" && self.txtPassword.text == "123456" {
-            if switchRemember.isOn {
-                let userDefault = UserDefaults.standard
-                userDefault.setValue(txtUserName.text, forKey: "userEmail")
-                userDefault.set(txtPassword.text, forKey: "userPassword")
-            }else{
-            }
-            
+        if txtUserName.text == "Admin@gmail.com" && txtPassword.text == "123456" {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let  userVC = storyBoard.instantiateViewController(withIdentifier: "OwnerViewIdentifier") as! OwnerViewController
+            self.present(userVC, animated: true, completion: nil)
+        }else if txtUserName.text == "admin1@gmail.com" && txtPassword.text == "123456" {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let  userVC = storyBoard.instantiateViewController(withIdentifier: "OwnerViewIdentifier") as! OwnerViewController
+            self.present(userVC, animated: true, completion: nil)
         }else{
-            let alert = UIAlertController(title: "ERROR", message: "Invalid Username or Password", preferredStyle: UIAlertController.Style.alert)
-            let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
-                print("Alert OK")
-            })
-            alert.addAction(actionOk)
-            self.present(alert, animated: true, completion: nil)
-            
+            let alert = UIAlertController(title: "Error", message: "Invalid Username or Password", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true)
         }
     }
     
