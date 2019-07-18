@@ -17,6 +17,7 @@
 		FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B34B22DFF5170065B058 /* UserViewController.swift */; };
 		FB36B34F22DFF6B90065B058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B34E22DFF6B90065B058 /* User.swift */; };
 		FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35022DFFA6F0065B058 /* Owner.swift */; };
+		FB36B35322DFFAFE0065B058 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35222DFFAFE0065B058 /* Property.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FB36B34B22DFF5170065B058 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		FB36B34E22DFF6B90065B058 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB36B35022DFFA6F0065B058 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		FB36B35222DFFAFE0065B058 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				FB36B34E22DFF6B90065B058 /* User.swift */,
 				FB36B35022DFFA6F0065B058 /* Owner.swift */,
+				FB36B35222DFFAFE0065B058 /* Property.swift */,
 			);
 			path = SwiftClasses;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB36B35322DFFAFE0065B058 /* Property.swift in Sources */,
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
 				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
