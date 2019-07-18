@@ -17,8 +17,8 @@ class Owner {
     }
     let email: String?
     let password: String?
-    var propertyOwned: String?
-    init(ownerId: Int,firstName: String,lastName: String,email: String,password: String,propertyOwned: String) {
+    var propertyOwned: [Property]?
+    init(ownerId: Int,firstName: String,lastName: String,email: String,password: String,propertyOwned: [Property]) {
         self.ownerId = ownerId
         self.firstName = firstName
         self.lastName = lastName

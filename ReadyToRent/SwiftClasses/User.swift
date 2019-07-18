@@ -17,8 +17,8 @@ class User {
     }
     let email: String?
     let password: String?
-    var propertyBooked: String?
-    init(userId: Int,firstName: String,lastName: String,email: String,password: String,propertyBooked: String) {
+    var propertyBooked: Property?
+    init(userId: Int,firstName: String,lastName: String,email: String,password: String,propertyBooked: Property) {
         self.userId = userId
         self.firstName = firstName
         self.lastName = lastName
