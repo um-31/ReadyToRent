@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
             self.present(userVC, animated: true, completion: nil)
         }else if txtUserName.text == "admin1@gmail.com" && txtPassword.text == "123456" {
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let  userVC = storyBoard.instantiateViewController(withIdentifier: "OwnerViewIdentifier") as! OwnerViewController
+            let  userVC = storyBoard.instantiateViewController(withIdentifier: "UserViewIdentifier") as! UserViewController
             self.present(userVC, animated: true, completion: nil)
         }else{
             let alert = UIAlertController(title: "Error", message: "Invalid Username or Password", preferredStyle: .alert)

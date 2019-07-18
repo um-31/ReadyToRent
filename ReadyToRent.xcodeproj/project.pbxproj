@@ -14,6 +14,7 @@
 		FB27FEE622D2A5F100735058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */; };
 		FB27FEEF22D5518000735058 /* blue_home.png in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEEE22D5517F00735058 /* blue_home.png */; };
 		FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B34922DFBB530065B058 /* OwnerViewController.swift */; };
+		FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B34B22DFF5170065B058 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FB27FEE722D2A5F100735058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB27FEEE22D5517F00735058 /* blue_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_home.png; sourceTree = "<group>"; };
 		FB36B34922DFBB530065B058 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
+		FB36B34B22DFF5170065B058 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FB27FEDB22D2A5F000735058 /* AppDelegate.swift */,
 				FB27FEDD22D2A5F000735058 /* LoginViewController.swift */,
 				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
+				FB36B34B22DFF5170065B058 /* UserViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
 				FB27FEE222D2A5F100735058 /* Assets.xcassets */,
 				FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
+				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
 				FB27FEDE22D2A5F000735058 /* LoginViewController.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
 			);
