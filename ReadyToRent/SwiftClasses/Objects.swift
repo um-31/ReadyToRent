@@ -8,24 +8,26 @@
 
 import Foundation
 
-class Objects
-{
+class Objects {
+    
     static public var staticOwners : [Owner] = []
     static public var staticProperties : [Property] = []
     static public var staticUsers : [User] = []
     
-    static func loadStaticOwners()
-    {
-        let owner1: Owner = Owner.init(ownerId: 21, firstName: "Udhay", lastName: "Mahajan", email: "udhay1@gmail.com", password: "123456", propertyOwned: [staticProperties[0],staticProperties[1]])
+    
+    static func loadStaticOwners() {
+        
+        //Owner Objects
+        let owner1: Owner = Owner.init(ownerId: 21, firstName: "Udhay", lastName: "Mahajan", email: "owner1@gmail.com", password: "123456", propertyOwned: [staticProperties[0],staticProperties[1]])
         staticOwners.append(owner1)
-        let owner2: Owner = Owner.init(ownerId: 22, firstName: "Ujwal", lastName: "Arora", email: "ujwal1@gmail.com", password: "123456", propertyOwned: [staticProperties[2]])
+        let owner2: Owner = Owner.init(ownerId: 22, firstName: "Ujwal", lastName: "Arora", email: "owner2@gmail.com", password: "123456", propertyOwned: [staticProperties[2]])
         staticOwners.append(owner2)
-        let owner3: Owner = Owner.init(ownerId: 23, firstName: "Gurwinder", lastName: "Singh", email: "gurwinder1@gmail.com", password: "123456", propertyOwned: [staticProperties[0]])
+        let owner3: Owner = Owner.init(ownerId: 23, firstName: "Gurwinder", lastName: "Singh", email: "owner3@gmail.com", password: "123456", propertyOwned: [staticProperties[0]])
         staticOwners.append(owner3)
     }
     
-    static func loadStaticProperties()
-    {
+    static func loadStaticProperties() {
+        
         //Property Objects
         let property1: Property = Property.init(propertyId: 11, propertyAddress: "64 BEDLE AVE", propertyRent: 550.00, area: 111.2)
         staticProperties.append(property1)
@@ -45,4 +47,5 @@ class Objects
         let user3: User = User.init(userId: 3, firstName: "Gurwinder", lastName: "Singh", email: "gurwinder@gmail.com", password: "123456", propertyBooked: staticProperties[2])
         staticUsers.append(user3)
     }
+    
 }

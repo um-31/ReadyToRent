@@ -8,11 +8,10 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class UserLoginViewController: UIViewController {
 
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var switchRemember: UISwitch!
     var users : [User] = []
     var properties : [Property] = []
     var Owners : [Owner] = []
@@ -48,7 +47,7 @@ class LoginViewController: UIViewController {
                 temp = owner.ownerId!
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                 let  ownerVC = storyBoard.instantiateViewController(withIdentifier: "OwnerViewIdentifier") as! OwnerViewController
-                ownerVC.userId = temp
+                ownerVC.ownerId = temp
                 self.present(ownerVC, animated: true, completion: nil)
                 
             }

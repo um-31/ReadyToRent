@@ -14,14 +14,12 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadUser()
-        print(user!.userId,user!.fullName)
         
 
         // Do any additional setup after loading the view.
     }
     
-    func loadUser()
-    {
+    func loadUser() {
         for i in Objects.staticUsers
         {
             if(i.userId == userId)
