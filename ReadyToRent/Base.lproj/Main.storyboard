@@ -244,6 +244,21 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="-13.392857142857142"/>
         </scene>
+        <!--Property Details View Controller-->
+        <scene sceneID="pVh-nq-iSf">
+            <objects>
+                <viewController id="Fde-ti-q1b" customClass="PropertyDetailsViewController" customModule="ReadyToRent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H3y-jC-WCr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c6C-Kl-opD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGF-rL-Wur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4254" y="-13"/>
+        </scene>
     </scenes>
     <resources>
         <image name="blue_home.png" width="256" height="256"/>

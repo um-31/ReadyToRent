@@ -19,6 +19,8 @@
 		FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35022DFFA6F0065B058 /* Owner.swift */; };
 		FB36B35322DFFAFE0065B058 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35222DFFAFE0065B058 /* Property.swift */; };
 		FB36B35722E149180065B058 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35622E149180065B058 /* Objects.swift */; };
+		FB36B35922E23F6F0065B058 /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */; };
+		FB36B35B22E2405E0065B058 /* UserBookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		FB36B35022DFFA6F0065B058 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		FB36B35222DFFAFE0065B058 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		FB36B35622E149180065B058 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
+		FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +78,12 @@
 				FB27FEDD22D2A5F000735058 /* LoginViewController.swift */,
 				FB36B34B22DFF5170065B058 /* UserViewController.swift */,
 				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
+				FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
 				FB27FEE222D2A5F100735058 /* Assets.xcassets */,
 				FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */,
 				FB27FEE722D2A5F100735058 /* Info.plist */,
-				FB36B35622E149180065B058 /* Objects.swift */,
+				FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */,
 			);
 			path = ReadyToRent;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				FB36B34E22DFF6B90065B058 /* User.swift */,
 				FB36B35022DFFA6F0065B058 /* Owner.swift */,
 				FB36B35222DFFAFE0065B058 /* Property.swift */,
+				FB36B35622E149180065B058 /* Objects.swift */,
 			);
 			path = SwiftClasses;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB36B35922E23F6F0065B058 /* PropertyDetailsViewController.swift in Sources */,
 				FB36B35322DFFAFE0065B058 /* Property.swift in Sources */,
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
@@ -181,6 +188,7 @@
 				FB27FEDE22D2A5F000735058 /* LoginViewController.swift in Sources */,
 				FB36B34F22DFF6B90065B058 /* User.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
+				FB36B35B22E2405E0065B058 /* UserBookedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
