@@ -9,7 +9,7 @@
 import UIKit
 
 class OwnerViewController: UIViewController {
-
+    var userId : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
