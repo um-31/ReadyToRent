@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDB22D2A5F000735058 /* AppDelegate.swift */; };
-		FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */; };
+		FB27FEDE22D2A5F000735058 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDD22D2A5F000735058 /* LoginViewController.swift */; };
 		FB27FEE122D2A5F000735058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEDF22D2A5F000735058 /* Main.storyboard */; };
 		FB27FEE322D2A5F100735058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEE222D2A5F100735058 /* Assets.xcassets */; };
 		FB27FEE622D2A5F100735058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		FB27FED822D2A5F000735058 /* ReadyToRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyToRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB27FEDB22D2A5F000735058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		FB27FEDD22D2A5F000735058 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB27FEE022D2A5F000735058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB27FEE222D2A5F100735058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB27FEE522D2A5F100735058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				FB36B34D22DFF6990065B058 /* SwiftClasses */,
 				FB27FEED22D5515500735058 /* Assests */,
 				FB27FEDB22D2A5F000735058 /* AppDelegate.swift */,
-				FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */,
+				FB27FEDD22D2A5F000735058 /* LoginViewController.swift */,
 				FB36B34B22DFF5170065B058 /* UserViewController.swift */,
 				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
@@ -178,7 +178,7 @@
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
 				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
 				FB36B35722E149180065B058 /* Objects.swift in Sources */,
-				FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */,
+				FB27FEDE22D2A5F000735058 /* LoginViewController.swift in Sources */,
 				FB36B34F22DFF6B90065B058 /* User.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
 			);
