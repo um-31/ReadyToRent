@@ -10,7 +10,9 @@ import UIKit
 
 class OwnerViewController: UIViewController {
     var property : Property?
+    var propertySelected : Property?
     var ownerId : Int = 0
+    var selectedIndex : Int?
     var owner : Owner?
     @IBOutlet weak var lblFullName: UILabel!
     @IBOutlet weak var lblOwnerId: UILabel!
@@ -33,11 +35,6 @@ class OwnerViewController: UIViewController {
             }
         }
     }
-    @IBAction func unWindFromPropertyDetails(storyboardSegue: UIStoryboardSegue)
-    {
-        _ = storyboardSegue.source as! PropertyDetailsViewController
-    }
-
 }
 
 extension OwnerViewController: UITableViewDataSource, UITableViewDelegate {
@@ -49,14 +46,22 @@ extension OwnerViewController: UITableViewDataSource, UITableViewDelegate {
         property = (owner?.propertyOwned![indexPath.row])!
         print(property,"property --<")
         let cell = tableView.dequeueReusableCell(withIdentifier: "OwnerPropertyIdentifier", for: indexPath) as! PropertyTableViewCell
+        print("index path row : -- ",indexPath.row)
         cell.setLable(property: property!)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        propertySelected = (owner?.propertyOwned![indexPath.row])!
+        //print("property selected yg-------------------------g: ",propertySelected?.propertyId!)
+        //2selectedIndex = indexPath.row
+        //print("selected index : ",selectedIndex!)
         performSegue(withIdentifier: "ShowViewController", sender: self)
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Before passing 1 :--------@@@@@@@@@@ ",property!.propertyId)
         if let destination = segue.destination as? PropertyDetailsViewController{
+            print("Before passing 2 :--------@@@@@@@@@@ ",propertySelected?.propertyId)
             destination.property = property
         }
     }
