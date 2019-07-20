@@ -9,14 +9,16 @@
 import Foundation
 
 class Property {
+    var propertyImage: String?
     var propertyId: Int?
     var propertyAddress: String?
     var propertyRent: Float?
     var area: Float?
-    init(propertyId: Int, propertyAddress: String, propertyRent: Float, area: Float) {
+    init(propertyId: Int, propertyAddress: String, propertyRent: Float, area: Float, propertyImage: String) {
         self.propertyId = propertyId
         self.propertyAddress = propertyAddress
         self.propertyRent = propertyRent
         self.area = area
+        self.propertyImage = propertyImage
     }
 }

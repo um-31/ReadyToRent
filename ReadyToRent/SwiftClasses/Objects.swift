@@ -29,11 +29,11 @@ class Objects {
     static func loadStaticProperties() {
         
         //Property Objects
-        let property1: Property = Property.init(propertyId: 11, propertyAddress: "64 BEDLE AVE", propertyRent: 550.00, area: 111.2)
+        let property1: Property = Property.init(propertyId: 11, propertyAddress: "64 BEDLE AVE", propertyRent: 550.00, area: 111.2,propertyImage: "property1.PNG")
         staticProperties.append(property1)
-        let property2: Property = Property.init(propertyId: 12, propertyAddress: "1 abc Dr", propertyRent: 600.00, area: 115.7)
+        let property2: Property = Property.init(propertyId: 12, propertyAddress: "1 abc Dr", propertyRent: 600.00, area: 115.7,propertyImage: "property2.PNG")
         staticProperties.append(property2)
-        let property3: Property = Property.init(propertyId: 13, propertyAddress: "3 abc Dr", propertyRent: 700.00, area: 150.7)
+        let property3: Property = Property.init(propertyId: 13, propertyAddress: "3 abc Dr", propertyRent: 700.00, area: 150.7,propertyImage: "property3.PNG")
         staticProperties.append(property3)
     }
     

@@ -14,6 +14,7 @@ class PropertyDetailsViewController: UIViewController {
     @IBOutlet weak var lblAddress: UILabel!
     @IBOutlet weak var lblPropertyRent: UILabel!
     @IBOutlet weak var lblPropertyArea: UILabel!
+    @IBOutlet weak var imgProperty: UIImageView!
     var property: Property?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class PropertyDetailsViewController: UIViewController {
         self.lblAddress.text = "Address: \((property!.propertyAddress)!)"
         self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
         self.lblPropertyArea.text = "Area: \((property!.area)!)"
+        self.imgProperty.image = UIImage(named: <#T##String#>)
     }
 
 }
