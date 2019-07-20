@@ -18,7 +18,7 @@ class Objects {
     static func loadStaticOwners() {
         
         //Owner Objects
-        let owner1: Owner = Owner.init(ownerId: 21, firstName: "Udhay", lastName: "Mahajan", email: "owner1@gmail.com", password: "123456", propertyOwned: [staticProperties[0],staticProperties[1]])
+        let owner1: Owner = Owner.init(ownerId: 21, firstName: "Udhay", lastName: "Mahajan", email: "owner1@gmail.com", password: "123456", propertyOwned: [staticProperties[0],staticProperties[1],staticProperties[2]])
         staticOwners.append(owner1)
         let owner2: Owner = Owner.init(ownerId: 22, firstName: "Ujwal", lastName: "Arora", email: "owner2@gmail.com", password: "123456", propertyOwned: [staticProperties[2]])
         staticOwners.append(owner2)

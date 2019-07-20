@@ -17,12 +17,10 @@ class PropertyDetailsViewController: UIViewController {
     var property: Property?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.lblPropertyID.text = "Property Id: \((property!.propertyId)!)"
-//        self.lblAddress.text = "Address: \((property!.propertyAddress)!)"
-//        self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
-//        self.lblPropertyArea.text = "Area: \((property!.area)!)"
-//
-//        self.title = "Abs"
+        self.lblPropertyID.text = "Property Id: \((property!.propertyId)!)"
+        self.lblAddress.text = "Address: \((property!.propertyAddress)!)"
+        self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
+        self.lblPropertyArea.text = "Area: \((property!.area)!)"
     }
 
 }
