@@ -22,7 +22,7 @@ class PropertyDetailsViewController: UIViewController {
         self.lblAddress.text = "Address: \((property!.propertyAddress)!)"
         self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
         self.lblPropertyArea.text = "Area: \((property!.area)!)"
-        self.imgProperty.image = UIImage(named: <#T##String#>)
+        self.imgProperty.image = UIImage(named: (property!.propertyImage)!)
     }
 
 }
