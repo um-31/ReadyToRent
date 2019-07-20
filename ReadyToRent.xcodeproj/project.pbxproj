@@ -22,6 +22,7 @@
 		FB36B35922E23F6F0065B058 /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */; };
 		FB36B35B22E2405E0065B058 /* UserBookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */; };
 		FB36B35D22E240AD0065B058 /* BookPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35C22E240AD0065B058 /* BookPropertyViewController.swift */; };
+		FB36B35F22E277160065B058 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B35E22E277160065B058 /* PropertyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookedViewController.swift; sourceTree = "<group>"; };
 		FB36B35C22E240AD0065B058 /* BookPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPropertyViewController.swift; sourceTree = "<group>"; };
+		FB36B35E22E277160065B058 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */,
 				FB36B34B22DFF5170065B058 /* UserViewController.swift */,
 				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
+				FB36B35E22E277160065B058 /* PropertyTableViewCell.swift */,
 				FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */,
 				FB36B35C22E240AD0065B058 /* BookPropertyViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
@@ -184,6 +187,7 @@
 			files = (
 				FB36B35922E23F6F0065B058 /* PropertyDetailsViewController.swift in Sources */,
 				FB36B35322DFFAFE0065B058 /* Property.swift in Sources */,
+				FB36B35F22E277160065B058 /* PropertyTableViewCell.swift in Sources */,
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
 				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
