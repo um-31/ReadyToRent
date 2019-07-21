@@ -15,6 +15,8 @@ class PropertyDetailsViewController: UIViewController {
     @IBOutlet weak var lblPropertyRent: UILabel!
     @IBOutlet weak var lblPropertyArea: UILabel!
     @IBOutlet weak var imgProperty: UIImageView!
+    @IBOutlet weak var lblNoOfRooms: UILabel!
+    @IBOutlet weak var lblPropertyType: UILabel!
     var property: Property?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class PropertyDetailsViewController: UIViewController {
         self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
         self.lblPropertyArea.text = "Area: \((property!.area)!)"
         self.imgProperty.image = UIImage(named: (property!.propertyImage)!)
+        self.lblNoOfRooms.text = "No Of Rooms: \((property!.numberOfRooms)!)"
+        self.lblPropertyType.text = "Property Type: \((property!.propertyType)!)"
     }
 
 }
