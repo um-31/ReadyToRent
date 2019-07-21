@@ -28,5 +28,16 @@ class PropertyDetailsViewController: UIViewController {
         self.lblNoOfRooms.text = "No Of Rooms: \((property!.numberOfRooms)!)"
         self.lblPropertyType.text = "Property Type: \((property!.propertyType)!)"
     }
+    @IBAction func btnShowTenant(_ sender: Any) {
+        let temp = property?.propertyId
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let  ownerVC = storyBoard.instantiateViewController(withIdentifier: "TenantDetailsIdentifier") as! ShowTenantViewController
+        ownerVC.propertyBooked = temp!
+        self.present(ownerVC, animated: true, completion: nil)
+    }
+    @IBAction func unwindFromShowTenantScreen(_ sender: UIStoryboardSegue) {
+        let s = sender.source as! ShowTenantViewController
+    }
+    
 
 }

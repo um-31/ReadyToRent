@@ -17,14 +17,16 @@ class User {
     }
     let email: String?
     let password: String?
+    let contact: String?
     var propertyBooked: Property?
-    init(userId: Int,firstName: String,lastName: String,email: String,password: String,propertyBooked: Property) {
+    init(userId: Int,firstName: String,lastName: String,email: String,password: String,propertyBooked: Property,contact: String) {
         self.userId = userId
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
         self.password = password
         self.propertyBooked = propertyBooked
+        self.contact = contact
         
 }
 }

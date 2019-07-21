@@ -33,6 +33,7 @@
 		FB36B37422E380B70065B058 /* property8.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FB36B36922E380B70065B058 /* property8.PNG */; };
 		FB36B37522E380B70065B058 /* property9.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FB36B36A22E380B70065B058 /* property9.PNG */; };
 		FB36B37622E380B70065B058 /* property10.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FB36B36B22E380B70065B058 /* property10.PNG */; };
+		FB36B37822E3F7810065B058 /* ShowTenantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B37722E3F7810065B058 /* ShowTenantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		FB36B36922E380B70065B058 /* property8.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = property8.PNG; sourceTree = "<group>"; };
 		FB36B36A22E380B70065B058 /* property9.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = property9.PNG; sourceTree = "<group>"; };
 		FB36B36B22E380B70065B058 /* property10.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = property10.PNG; sourceTree = "<group>"; };
+		FB36B37722E3F7810065B058 /* ShowTenantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTenantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				FB36B34922DFBB530065B058 /* OwnerViewController.swift */,
 				FB36B35E22E277160065B058 /* PropertyTableViewCell.swift */,
 				FB36B35822E23F6F0065B058 /* PropertyDetailsViewController.swift */,
+				FB36B37722E3F7810065B058 /* ShowTenantViewController.swift */,
 				FB36B35C22E240AD0065B058 /* BookPropertyViewController.swift */,
 				FB27FEDF22D2A5F000735058 /* Main.storyboard */,
 				FB36B35A22E2405E0065B058 /* UserBookedViewController.swift */,
@@ -244,6 +247,7 @@
 				FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */,
 				FB36B34F22DFF6B90065B058 /* User.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
+				FB36B37822E3F7810065B058 /* ShowTenantViewController.swift in Sources */,
 				FB36B35B22E2405E0065B058 /* UserBookedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
