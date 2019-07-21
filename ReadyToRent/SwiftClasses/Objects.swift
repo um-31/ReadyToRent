@@ -56,11 +56,11 @@ class Objects {
     static func loadStaticUsers()
     {
         //User Objects
-        let user1: User = User.init(userId: 1, firstName: "Udhay", lastName: "Mahajan", email: "admin1@gmail.com", password: "123456", propertyBooked: staticProperties[0], contact: "6478667679")
+        let user1: User = User.init(userId: 1, firstName: "Udhay", lastName: "Mahajan", email: "user1@gmail.com", password: "123456", propertyBooked: staticProperties[0], contact: "6478667679")
         staticUsers.append(user1)
-        let user2: User = User.init(userId: 2, firstName: "Ujwal", lastName: "Arora", email: "ujwal@gmail.com", password: "123456", propertyBooked: staticProperties[1], contact: "6477193418")
+        let user2: User = User.init(userId: 2, firstName: "Ujwal", lastName: "Arora", email: "user2@gmail.com", password: "123456", propertyBooked: staticProperties[1], contact: "6477193418")
         staticUsers.append(user2)
-        let user3: User = User.init(userId: 3, firstName: "Gurwinder", lastName: "Singh", email: "gurwinder@gmail.com", password: "123456", propertyBooked: staticProperties[2], contact: "4376515982")
+        let user3: User = User.init(userId: 3, firstName: "Gurwinder", lastName: "Singh", email: "user3@gmail.com", password: "123456", propertyBooked: staticProperties[2], contact: "4376515982")
         staticUsers.append(user3)
     }
     
