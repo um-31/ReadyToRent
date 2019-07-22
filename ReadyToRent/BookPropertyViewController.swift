@@ -15,7 +15,9 @@ class BookPropertyViewController: UIViewController {
     var allUsers : [User] = []
     var properties : [Property] = []
     var availableProperties: [Property] = []
+    var bookedProperties: [Property] = []
     var currentProperty: Property?
+    @IBOutlet weak var tblAvailableProperties: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         Objects.loadStaticProperties()
@@ -24,7 +26,8 @@ class BookPropertyViewController: UIViewController {
         allUsers = Objects.staticUsers
         self.error()
         loadUser()
-        
+        self.tblAvailableProperties.delegate = self
+        self.tblAvailableProperties.dataSource = self
         
 
     }
@@ -50,13 +53,13 @@ extension BookPropertyViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         for i in properties {
             for j in allUsers {
-                if i.propertyId != j.propertyBooked?.propertyId {
-                    availableProperties.append(i)
-                }else {
-                    properties.remove(at: 0)
+            print("--------",properties[0].propertyId!)
+                if i.propertyId == j.propertyBooked?.propertyId {
+                    bookedProperties.append(i)
                 }
             }
         }
+        print("============",availableProperties.count)
         return availableProperties.count
     }
     

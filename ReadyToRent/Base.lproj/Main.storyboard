@@ -231,6 +231,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JIQ-35-ejP"/>
                     </view>
+                    <connections>
+                        <outlet property="tblAvailableProperties" destination="Kbu-3S-Kqf" id="Hp5-Us-j1v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpP-AY-OKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
