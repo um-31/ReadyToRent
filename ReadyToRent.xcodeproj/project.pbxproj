@@ -34,6 +34,7 @@
 		FB36B37522E380B70065B058 /* property9.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FB36B36A22E380B70065B058 /* property9.PNG */; };
 		FB36B37622E380B70065B058 /* property10.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FB36B36B22E380B70065B058 /* property10.PNG */; };
 		FB36B37822E3F7810065B058 /* ShowTenantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B37722E3F7810065B058 /* ShowTenantViewController.swift */; };
+		FB36B37A22E54EB30065B058 /* BookPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		FB36B36A22E380B70065B058 /* property9.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = property9.PNG; sourceTree = "<group>"; };
 		FB36B36B22E380B70065B058 /* property10.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = property10.PNG; sourceTree = "<group>"; };
 		FB36B37722E3F7810065B058 /* ShowTenantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTenantViewController.swift; sourceTree = "<group>"; };
+		FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPropertyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				FB27FEE222D2A5F100735058 /* Assets.xcassets */,
 				FB27FEE422D2A5F100735058 /* LaunchScreen.storyboard */,
 				FB27FEE722D2A5F100735058 /* Info.plist */,
+				FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */,
 			);
 			path = ReadyToRent;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				FB36B35922E23F6F0065B058 /* PropertyDetailsViewController.swift in Sources */,
 				FB36B35322DFFAFE0065B058 /* Property.swift in Sources */,
 				FB36B35F22E277160065B058 /* PropertyTableViewCell.swift in Sources */,
+				FB36B37A22E54EB30065B058 /* BookPropertyTableViewCell.swift in Sources */,
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
 				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
