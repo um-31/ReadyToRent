@@ -10,12 +10,15 @@ import UIKit
 
 class UserLoginViewController: UIViewController {
 
+    @IBOutlet weak var switchRemember: UISwitch!
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     var users : [User] = []
     var properties : [Property] = []
     var Owners : [Owner] = []
     var temp: Int = 0
+    let userDefault = UserDefaults.standard
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +40,21 @@ class UserLoginViewController: UIViewController {
     
     
     @IBAction func btnLogin(_ sender: Any) {
+        
+        let email = txtUserName.text
+        let password = txtPassword.text
+        
+        // Check if Email Textbox is not empty
+        if !email!.isEmpty
+        {
+            
+        }
+        else
+        {
+            showAlerBox(msg: "Fields Can't be Empty")
+
+        }
+
         for user in users {
             if txtUserName.text == user.email && txtPassword.text == user.password {
                 temp = user.userId!
