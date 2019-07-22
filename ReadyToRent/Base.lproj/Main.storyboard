@@ -84,6 +84,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="switchRemember" destination="uf4-xq-DEe" id="VLg-zJ-rav"/>
                         <outlet property="txtPassword" destination="91i-ZB-uKN" id="Ugy-rB-QAa"/>
                         <outlet property="txtUserName" destination="2dG-8U-TLA" id="zAm-VQ-IBb"/>
                     </connections>
