@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD9B169022E61E240091CD5C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B168F22E61E240091CD5C /* Utilities.swift */; };
+		DD9B169322E62E750091CD5C /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B169222E62E750091CD5C /* AboutUsViewController.swift */; };
 		FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDB22D2A5F000735058 /* AppDelegate.swift */; };
 		FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */; };
 		FB27FEE122D2A5F000735058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEDF22D2A5F000735058 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DD9B168F22E61E240091CD5C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DD9B169222E62E750091CD5C /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		FB27FED822D2A5F000735058 /* ReadyToRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyToRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB27FEDB22D2A5F000735058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				FB27FEE722D2A5F100735058 /* Info.plist */,
 				FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */,
 				FB36B37B22E577A60065B058 /* PropertyBookingViewController.swift */,
+				DD9B169222E62E750091CD5C /* AboutUsViewController.swift */,
 			);
 			path = ReadyToRent;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FB36B35D22E240AD0065B058 /* BookPropertyViewController.swift in Sources */,
 				FB36B35722E149180065B058 /* Objects.swift in Sources */,
 				FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */,
+				DD9B169322E62E750091CD5C /* AboutUsViewController.swift in Sources */,
 				FB36B34F22DFF6B90065B058 /* User.swift in Sources */,
 				FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */,
 				FB36B37822E3F7810065B058 /* ShowTenantViewController.swift in Sources */,

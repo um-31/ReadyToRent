@@ -150,7 +150,7 @@ class UserLoginViewController: UIViewController {
     
     @IBAction func unWindLogoutFromAUserScreen(storyboardSegue: UIStoryboardSegue)
     {
-        _ = storyboardSegue.source as! UserViewController
+        let s = storyboardSegue.source as! UserViewController
         if(switchRemember.isOn)
         {
             getRememberMeValues()
