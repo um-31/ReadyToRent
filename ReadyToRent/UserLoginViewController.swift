@@ -145,6 +145,36 @@ class UserLoginViewController: UIViewController {
             userDefault.removeObject(forKey: "password")
         }
     }
+    
+    // Functions that will come into action after user click logout from any screen
+    
+    @IBAction func unWindLogoutFromAUserScreen(storyboardSegue: UIStoryboardSegue)
+    {
+        _ = storyboardSegue.source as! UserViewController
+        if(switchRemember.isOn)
+        {
+            getRememberMeValues()
+        }
+        else
+        {
+            txtPassword.text = ""
+            txtUserName.text = ""
+        }
+    }
+    
+    @IBAction func unWindLogoutFromAOwnerScreen(storyboardSegue: UIStoryboardSegue)
+    {
+        _ = storyboardSegue.source as! OwnerViewController
+        if(switchRemember.isOn)
+        {
+            getRememberMeValues()
+        }
+        else
+        {
+            txtPassword.text = ""
+            txtUserName.text = ""
+        }
+    }
 
 }
 
