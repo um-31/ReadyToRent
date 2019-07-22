@@ -47,7 +47,31 @@ class UserLoginViewController: UIViewController {
         // Check if Email Textbox is not empty
         if !email!.isEmpty
         {
-            
+            // Check If the email is valid or not
+            if (email?.isValidEmail())!
+            {
+                //Check If the Password field is empty or not
+                if !password!.isEmpty
+                {
+                    //Check Password Size
+                    if (password?.sizeCheck())!
+                    {
+                        
+                    }
+                    else
+                    {
+                        showAlerBox(msg: "Password should be atleast 6 Chracters long")
+                    }
+                }
+                else
+                {
+                    showAlerBox(msg: "Password field empty")
+                }
+            }
+            else
+            {
+                showAlerBox(msg: "Invalid Email")
+            }
         }
         else
         {
