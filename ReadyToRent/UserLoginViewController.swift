@@ -75,6 +75,23 @@ class UserLoginViewController: UIViewController {
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    // Function for getting Data stored in user default by key
+    func getRememberMeValues()
+    {
+        let userDefault = UserDefaults.standard
+        
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            txtUserName.text = email
+            
+            if let pwd = userDefault.string(forKey: "userPassword")
+            {
+                txtPassword.text = pwd
+            }
+        }
+        switchRemember.setOn(true, animated: true)
+    }
 
 }
 
