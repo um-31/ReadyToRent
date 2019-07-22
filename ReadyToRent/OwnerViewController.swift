@@ -36,7 +36,7 @@ class OwnerViewController: UIViewController {
         }
     }
     @IBAction func unwindFromPropertyDetailsScreen(_ sender: UIStoryboardSegue) {
-        let s = sender.source as! PropertyDetailsViewController
+        _ = sender.source as! PropertyDetailsViewController
     }
 }
 
