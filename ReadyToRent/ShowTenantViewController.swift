@@ -19,11 +19,9 @@ class ShowTenantViewController: UIViewController {
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var lblContact: UILabel!
     @IBOutlet weak var lblNoTenant: UILabel!
-    var temp = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         showDetailViewController()
-        checkAlert()
         print("-------",propertyBooked)
         
 
@@ -32,7 +30,6 @@ class ShowTenantViewController: UIViewController {
         for i in Objects.staticProperties {
             if i.propertyId == propertyBooked {
                 tenantProperty = i
-                temp = temp + 1
             }
         }
         for j in Objects.staticUsers {
@@ -42,16 +39,7 @@ class ShowTenantViewController: UIViewController {
                 lblUserName.text = "Name: \((j.fullName))"
                 lblEmail.text = "Email: \((j.email)!)"
                 lblContact.text = "Phone No. : \((j.contact)!)"
-                temp = temp + 1
             }
-
-        }
-        
-    }
-    func checkAlert() {
-        if temp == 0 {
-            lblNoTenant.text = "Your Property Is Not Booked Yet"
         }
     }
-
 }

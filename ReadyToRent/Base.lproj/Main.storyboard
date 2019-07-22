@@ -67,8 +67,9 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="User Login" id="LfC-xy-MY3">
+                                    <navigationItem title="Login" id="LfC-xy-MY3">
                                         <barButtonItem key="rightBarButtonItem" title="About Us" id="THM-kh-cl6">
+                                            <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="HQI-hc-yCU" kind="show" id="8g7-6a-jfU"/>
                                             </connections>
@@ -76,27 +77,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-W5-by7">
-                                <rect key="frame" x="120" y="131" width="200" height="79"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Renting Made Easier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-W5-by7">
+                                <rect key="frame" x="20" y="331" width="374" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhZ-U8-zby">
-                                <rect key="frame" x="133" y="201" width="149" height="73"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fe1-D9-Al9">
+                                <rect key="frame" x="92" y="116" width="231" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Rent ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iun-HG-kAB">
-                                <rect key="frame" x="97" y="273" width="234" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -130,6 +121,7 @@
                                 <items>
                                     <navigationItem title="About Us" id="LG0-eD-dhK">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="IIV-RA-WOU">
+                                            <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="AjO-ia-cxN"/>
                                             </connections>
@@ -222,7 +214,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="Dzm-no-ToC">
+                                    <navigationItem id="Dzm-no-ToC">
                                         <barButtonItem key="rightBarButtonItem" title="Logout" id="5hh-e3-jju">
                                             <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
@@ -261,13 +253,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe2-Xv-Mkg">
-                                <rect key="frame" x="77" y="389" width="286" height="74"/>
+                                <rect key="frame" x="64" y="508" width="286" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="backgroundColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Wanna Book A Property ?">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnBookProperty:" destination="W6y-Ih-NX5" eventType="touchUpInside" id="KvC-it-cPV"/>
@@ -338,8 +330,9 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="Jaj-G2-DAs">
+                                    <navigationItem id="Jaj-G2-DAs">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="N8j-Rp-xss">
+                                            <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="N4l-pU-8Kt" kind="unwind" unwindAction="unWindLogoutFromBookPropertyViewScreenWithStoryboardSegue:" id="FJ5-Ym-MWp"/>
                                             </connections>
@@ -433,7 +426,14 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="viX-eU-dIT"/>
+                                    <navigationItem id="viX-eU-dIT">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="iN4-X2-3wr">
+                                            <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="D4i-2s-ltX" kind="unwind" unwindAction="unwindFromPropertyBooking:" id="NSX-s1-4Tg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-Bg-4hY">
@@ -514,7 +514,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="GL0-dg-jnp">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="d98-VC-R02"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="d98-VC-R02">
+                                            <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -562,7 +564,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="GWy-mX-XbM">
+                                    <navigationItem id="GWy-mX-XbM">
                                         <barButtonItem key="rightBarButtonItem" title="Logout" id="n16-27-Hy1">
                                             <color key="tintColor" red="0.1878238022" green="0.43566033240000002" blue="0.71375650170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
@@ -844,4 +846,7 @@
             <point key="canvasLocation" x="5198.5507246376819" y="-95.089285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue_home.png" width="256" height="256"/>
+    </resources>
 </document>
