@@ -47,6 +47,9 @@ class UserViewController: UIViewController {
         lblContact.text = "Ph No. : \((user?.contact)!)"
         lblPropertyBooked.text = "Porperty Booked: \((property?.propertyAddress)!)"
     }
+    @IBAction func unwindFromPropertyBooking(_ sender: UIStoryboardSegue) {
+        let s = sender.source as! PropertyBookingViewController
+    }
     
     
     @IBAction func btnBookProperty(_ sender: Any) {

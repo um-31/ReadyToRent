@@ -14,8 +14,6 @@ class BookPropertyViewController: UIViewController {
     var user: User?
     var allUsers : [User] = []
     var properties : [Property] = []
-    var availableProperty: Property?
-    var bookedProperties: [Property] = []
     var currentProperty: Property?
     var propertySelected : Property?
     @IBOutlet weak var tblAvailableProperties: UITableView!
@@ -28,6 +26,7 @@ class BookPropertyViewController: UIViewController {
         print(properties.count)
         loadUser()
         bookingProperties()
+        print((user?.propertyBooked?.propertyId)!)
         self.tblAvailableProperties.delegate = self
         self.tblAvailableProperties.dataSource = self
         
@@ -53,13 +52,9 @@ class BookPropertyViewController: UIViewController {
             for j in allUsers {
                 if i.propertyId == j.propertyBooked?.propertyId {
                     properties.remove(at: 0)
-                    print(i.propertyId!)
                 }
             }
         }
-    }
-    @IBAction func unwindFromPropertyBooking(_ sender: UIStoryboardSegue) {
-        let s = sender.source as! BookPropertyViewController
     }
 
 }
@@ -72,20 +67,20 @@ extension BookPropertyViewController: UITableViewDataSource, UITableViewDelegate
         currentProperty = properties[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookPropertyIdentifier", for: indexPath) as! BookPropertyTableViewCell
         cell.setLable(property: currentProperty!)
-        print("=======",(user?.propertyBooked!.propertyId)!)
-        availableProperty = user?.propertyBooked!
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("..............",(availableProperty?.propertyId)!)
-        propertySelected = availableProperty
+        propertySelected = properties[indexPath.row]
         performSegue(withIdentifier: "BookPropertyIdentifier", sender: self)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? PropertyBookingViewController{
             destination.property = propertySelected
+        }
+        if let destination1 = segue.destination as? PropertyBookingViewController{
+            destination1.user = user
         }
     }
     

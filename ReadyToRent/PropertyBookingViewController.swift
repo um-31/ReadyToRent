@@ -11,6 +11,8 @@ import UIKit
 class PropertyBookingViewController: UIViewController {
 
     var property: Property?
+    var user: User?
+    var getIndex: Int = 0
     @IBOutlet weak var imgPropertyImage: UIImageView!
     @IBOutlet weak var lblPropertyId: UILabel!
     @IBOutlet weak var lblPropertyAddress: UILabel!
@@ -33,8 +35,13 @@ class PropertyBookingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btnBookProperty(_ sender: Any) {
-        Objects.loadStaticUsers()
-        print(Objects.staticUsers[5])
+        for i in Objects.staticProperties {
+            if property?.propertyId == i.propertyId {
+                user?.propertyBooked = Objects.staticProperties[getIndex]
+            }
+            getIndex = getIndex + 1
+        }
+        print((user?.propertyBooked?.propertyId)!)
         
     }
     

@@ -296,9 +296,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnBookProperty:" destination="A62-DT-H45" eventType="touchUpInside" id="NRo-T2-07d"/>
+                                    <action selector="btnBookProperty:" destination="A62-DT-H45" eventType="touchUpInside" id="C8e-QV-gLf"/>
                                     <action selector="btnShowTenant:" destination="LXe-bW-hc8" eventType="touchUpInside" id="s1R-le-ymn"/>
-                                    <segue destination="D4i-2s-ltX" kind="unwind" unwindAction="unwindFromPropertyBooking:" id="zEX-RY-jXC"/>
+                                    <segue destination="D4i-2s-ltX" kind="unwind" unwindAction="unwindFromPropertyBooking:" id="GEl-dw-abo"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESY-vx-tj7">
