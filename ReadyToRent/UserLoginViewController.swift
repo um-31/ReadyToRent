@@ -92,6 +92,19 @@ class UserLoginViewController: UIViewController {
         }
         switchRemember.setOn(true, animated: true)
     }
+    
+    // Function for Storing Data in Userdefault by key
+    
+    func setRememberMeValues()
+    {
+        if switchRemember.isOn {
+            userDefault.set(self.txtUserName.text, forKey: "email")
+            userDefault.set(self.txtPassword.text, forKey: "password")
+        }else{
+            userDefault.removeObject(forKey: "email")
+            userDefault.removeObject(forKey: "password")
+        }
+    }
 
 }
 
