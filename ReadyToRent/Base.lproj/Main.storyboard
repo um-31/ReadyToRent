@@ -207,7 +207,6 @@
                                         <connections>
                                             <outlet property="lblAdrees" destination="JFq-Pc-t0g" id="RZc-yM-yFR"/>
                                             <outlet property="lblPropertyId" destination="wPd-sh-0rC" id="uI4-kf-VGN"/>
-                                            <segue destination="A62-DT-H45" kind="show" identifier="BookPropertyIdentifier" id="rSu-Ek-9yE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -234,6 +233,7 @@
                     </view>
                     <connections>
                         <outlet property="tblAvailableProperties" destination="Kbu-3S-Kqf" id="Hp5-Us-j1v"/>
+                        <segue destination="A62-DT-H45" kind="show" identifier="BookPropertyIdentifier" id="DbL-nD-quk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpP-AY-OKF" userLabel="First Responder" sceneMemberID="firstResponder"/>

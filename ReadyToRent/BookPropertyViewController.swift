@@ -14,7 +14,7 @@ class BookPropertyViewController: UIViewController {
     var user: User?
     var allUsers : [User] = []
     var properties : [Property] = []
-    var availableProperties: [Property] = []
+    var availableProperty: Property?
     var bookedProperties: [Property] = []
     var currentProperty: Property?
     var propertySelected : Property?
@@ -61,7 +61,6 @@ class BookPropertyViewController: UIViewController {
     @IBAction func unwindFromPropertyBooking(_ sender: UIStoryboardSegue) {
         let s = sender.source as! BookPropertyViewController
     }
-    
 
 }
 extension BookPropertyViewController: UITableViewDataSource, UITableViewDelegate {
@@ -73,11 +72,14 @@ extension BookPropertyViewController: UITableViewDataSource, UITableViewDelegate
         currentProperty = properties[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookPropertyIdentifier", for: indexPath) as! BookPropertyTableViewCell
         cell.setLable(property: currentProperty!)
+        print("=======",(user?.propertyBooked!.propertyId)!)
+        availableProperty = user?.propertyBooked!
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        propertySelected = (user?.propertyBooked!)
+        print("..............",(availableProperty?.propertyId)!)
+        propertySelected = availableProperty
         performSegue(withIdentifier: "BookPropertyIdentifier", sender: self)
         
     }

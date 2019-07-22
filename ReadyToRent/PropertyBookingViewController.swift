@@ -20,6 +20,8 @@ class PropertyBookingViewController: UIViewController {
     @IBOutlet weak var lblPropertyType: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.lblPropertyId.text = "Property Id: \((property!.propertyId)!)"
         self.lblPropertyAddress.text = "Address: \((property!.propertyAddress)!)"
         self.lblPropertyRent.text = "Rent: \((property!.propertyRent)!)"
@@ -31,6 +33,8 @@ class PropertyBookingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btnBookProperty(_ sender: Any) {
+        Objects.loadStaticUsers()
+        print(Objects.staticUsers[5])
         
     }
     
