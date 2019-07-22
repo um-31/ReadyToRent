@@ -85,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD9B169122E61E670091CD5C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B168F22E61E240091CD5C /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FB27FECF22D2A5F000735058 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +112,7 @@
 		FB27FEDA22D2A5F000735058 /* ReadyToRent */ = {
 			isa = PBXGroup;
 			children = (
+				DD9B169122E61E670091CD5C /* Utilities */,
 				FB36B36022E380B70065B058 /* PropertyImages */,
 				FB36B34D22DFF6990065B058 /* SwiftClasses */,
 				FB27FEED22D5515500735058 /* Assests */,
@@ -122,7 +131,6 @@
 				FB27FEE722D2A5F100735058 /* Info.plist */,
 				FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */,
 				FB36B37B22E577A60065B058 /* PropertyBookingViewController.swift */,
-				DD9B168F22E61E240091CD5C /* Utilities.swift */,
 			);
 			path = ReadyToRent;
 			sourceTree = "<group>";

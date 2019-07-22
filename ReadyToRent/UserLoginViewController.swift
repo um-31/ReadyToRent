@@ -18,6 +18,11 @@ class UserLoginViewController: UIViewController {
     var temp: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Clean up text fields as we first launch login screen
+        txtUserName.text = ""
+        txtPassword.text = ""
+        
         Objects.loadStaticProperties()
         properties = Objects.staticProperties
         Objects.loadStaticUsers()
@@ -59,6 +64,16 @@ class UserLoginViewController: UIViewController {
             alert.addAction(okButton)
             self.present(alert, animated: true)
         }
+    }
+    
+    // Function for displaying AlertBox with Custom Message
+    
+    func showAlerBox(msg : String)  {
+        let alertController = UIAlertController(title: "Ready To Rent", message:
+            msg, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 
 }
