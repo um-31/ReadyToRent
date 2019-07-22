@@ -69,4 +69,10 @@ class UserViewController: UIViewController {
         }
     }
     
+    @IBAction func unWindLogoutFromBookPropertyViewScreen(storyboardSegue: UIStoryboardSegue)
+    {
+        _ = storyboardSegue.source as! BookPropertyViewController
+      
+    }
+    
 }

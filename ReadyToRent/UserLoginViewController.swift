@@ -23,8 +23,15 @@ class UserLoginViewController: UIViewController {
         super.viewDidLoad()
         
         // Clean up text fields as we first launch login screen
-        txtUserName.text = ""
-        txtPassword.text = ""
+        if(switchRemember.isOn)
+        {
+            getRememberMeValues()
+        }
+        else
+        {
+            txtPassword.text = ""
+            txtUserName.text = ""
+        }
         
         Objects.loadStaticProperties()
         properties = Objects.staticProperties
