@@ -62,8 +62,10 @@ class Objects {
         staticUsers.append(user2)
         let user3: User = User.init(userId: 3, firstName: "Gurwinder", lastName: "Singh", email: "user3@gmail.com", password: "123456", propertyBooked: staticProperties[2], contact: "4376515982")
         staticUsers.append(user3)
-        let user4: User = User.init(userId: 4, firstName: "Gurwinder", lastName: "Singh", email: "user3@gmail.com", password: "123456", propertyBooked: staticProperties[3], contact: "4376515982")
+        let user4: User = User.init(userId: 4, firstName: "Ravinder", lastName: "Singh", email: "user4@gmail.com", password: "123456", propertyBooked: staticProperties[3], contact: "4376547235")
         staticUsers.append(user4)
+        let user5: User = User.init(userId: 5, firstName: "Netra", lastName: "Dhalival", email: "user5@gmail.com", password: "123456", propertyBooked: staticProperties[4], contact: "6135725467")
+        staticUsers.append(user5)
     }
     
 }

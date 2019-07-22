@@ -50,7 +50,7 @@ class UserViewController: UIViewController {
     
     
     @IBAction func btnBookProperty(_ sender: Any) {
-        if user?.propertyBooked == nil {
+        if user?.propertyBooked == nil  {
             let temp = user?.userId
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let  userVC = storyBoard.instantiateViewController(withIdentifier: "UserBookedIdentifier") as! UserBookedViewController

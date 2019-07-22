@@ -17,15 +17,17 @@ class BookPropertyViewController: UIViewController {
     var availableProperties: [Property] = []
     var bookedProperties: [Property] = []
     var currentProperty: Property?
+    var propertySelected : Property?
     @IBOutlet weak var tblAvailableProperties: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Objects.loadStaticProperties()
         properties = Objects.staticProperties
-        Objects.loadStaticUsers()
         allUsers = Objects.staticUsers
         self.error()
+        print(allUsers.count)
+        print(properties.count)
         loadUser()
+        bookingProperties()
         self.tblAvailableProperties.delegate = self
         self.tblAvailableProperties.dataSource = self
         
@@ -46,30 +48,40 @@ class BookPropertyViewController: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true)
     }
+    func bookingProperties() {
+        for i in properties {
+            for j in allUsers {
+                if i.propertyId == j.propertyBooked?.propertyId {
+                    properties.remove(at: 0)
+                    print(i.propertyId!)
+                }
+            }
+        }
+    }
     
 
 }
 extension BookPropertyViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        for i in properties {
-            for j in allUsers {
-            print("--------",properties[0].propertyId!)
-                if i.propertyId == j.propertyBooked?.propertyId {
-                    bookedProperties.append(i)
-                }
-            }
-        }
-        print("============",availableProperties.count)
-        return availableProperties.count
+        return properties.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        currentProperty = availableProperties[indexPath.row]
+        currentProperty = properties[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookPropertyIdentifier", for: indexPath) as! BookPropertyTableViewCell
         cell.setLable(property: currentProperty!)
         return cell
         
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        propertySelected = (user?.propertyBooked!)
+        performSegue(withIdentifier: "BookPropertyIdentifier", sender: self)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PropertyBookingViewController{
+            destination.property = propertySelected
+        }
+    }
     
 }
