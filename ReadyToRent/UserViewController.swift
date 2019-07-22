@@ -48,7 +48,7 @@ class UserViewController: UIViewController {
         lblPropertyBooked.text = "Porperty Booked: \((property?.propertyAddress)!)"
     }
     @IBAction func unwindFromPropertyBooking(_ sender: UIStoryboardSegue) {
-        let s = sender.source as! PropertyBookingViewController
+        _ = sender.source as! PropertyBookingViewController
     }
     
     

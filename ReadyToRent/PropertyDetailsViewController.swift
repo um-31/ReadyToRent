@@ -36,7 +36,7 @@ class PropertyDetailsViewController: UIViewController {
         self.present(ownerVC, animated: true, completion: nil)
     }
     @IBAction func unwindFromShowTenantScreen(_ sender: UIStoryboardSegue) {
-        let s = sender.source as! ShowTenantViewController
+        _ = sender.source as! ShowTenantViewController
     }
     
 
