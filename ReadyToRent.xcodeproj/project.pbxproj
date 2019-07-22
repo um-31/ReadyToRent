@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD9B169022E61E240091CD5C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B168F22E61E240091CD5C /* Utilities.swift */; };
 		FB27FEDC22D2A5F000735058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDB22D2A5F000735058 /* AppDelegate.swift */; };
 		FB27FEDE22D2A5F000735058 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */; };
 		FB27FEE122D2A5F000735058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB27FEDF22D2A5F000735058 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD9B168F22E61E240091CD5C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FB27FED822D2A5F000735058 /* ReadyToRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyToRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB27FEDB22D2A5F000735058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB27FEDD22D2A5F000735058 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				FB27FEE722D2A5F100735058 /* Info.plist */,
 				FB36B37922E54EB30065B058 /* BookPropertyTableViewCell.swift */,
 				FB36B37B22E577A60065B058 /* PropertyBookingViewController.swift */,
+				DD9B168F22E61E240091CD5C /* Utilities.swift */,
 			);
 			path = ReadyToRent;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				FB36B35F22E277160065B058 /* PropertyTableViewCell.swift in Sources */,
 				FB36B37A22E54EB30065B058 /* BookPropertyTableViewCell.swift in Sources */,
 				FB36B34A22DFBB530065B058 /* OwnerViewController.swift in Sources */,
+				DD9B169022E61E240091CD5C /* Utilities.swift in Sources */,
 				FB36B35122DFFA6F0065B058 /* Owner.swift in Sources */,
 				FB36B34C22DFF5170065B058 /* UserViewController.swift in Sources */,
 				FB36B35D22E240AD0065B058 /* BookPropertyViewController.swift in Sources */,
